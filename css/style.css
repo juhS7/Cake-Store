@@ -26,12 +26,12 @@ time, mark, audio, video {
 
 @font-face {
   font-family: 'Barcelony';
-  src: url(Barcelony.ttf);
+  src: url(/Barcelony.ttf);
 }
 
 @font-face {
   font-family: 'Got';
-  src: url(Gotham\ Pro\ Regular.ttf);
+  src: url(/Gotham\ Pro\ Regular.ttf Pro\ Regular.ttf);
 }
 
 body{
@@ -68,8 +68,9 @@ body{
   font-size: 2.75rem;
   font-family: 'Barcelony';
   color: #9F0311;
-}
+  text-decoration: none;
 
+}
  ul{
   list-style-type: none;
 }
@@ -143,8 +144,8 @@ body{
 
 .inicio{
   display: flex;
-  background-image: url(fundo\ 1.png);
-background-size: cover; 
+  background-image: url('../img/fundo.png');
+  background-size: cover; 
   background-repeat: no-repeat;  
   background-position: center;   
   height: 850px;
@@ -161,7 +162,8 @@ background-size: cover;
 }
 
 .slider h1{
-  color: black;
+  color: #b22222;
+  font-family: 'Barcelony';
 }
 
 .bolos{
@@ -170,10 +172,7 @@ background-size: cover;
 }
 
 
-.logo {
-  text-decoration: none;
-  color: inherit; 
-}
+
 
 
 .pedido{
@@ -345,8 +344,6 @@ nav a.active {
 }
 
 
-
-
 footer {
     display: flex;
     justify-content: flex-end;
@@ -382,7 +379,6 @@ footer .nav-buttons button {
   align-items: center;
   background-color: #b22222;
 }
-
 
 
 .barral{
@@ -680,7 +676,7 @@ button:hover {
 
 .image-section {
   flex: 1;
-  background: url('331.png') no-repeat;
+  background: url('/img/fundo.png') no-repeat;
   width: 100%;
 }
 
@@ -809,6 +805,7 @@ button:hover {
   font-size: 1.5rem;
 }
 
+.image-section
 
 .contato{
   background-color: #ffffff;
@@ -1113,3 +1110,228 @@ button:hover {
         font-size: 1.8rem;
     }
 }
+
+/* catalogo*/
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 50px;
+      background-color: #fff;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+.features-bar {
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #b22222;
+  font-family: 'Got';
+}
+
+.features-bar .feature svg {
+  fill: #b22222;
+}
+
+.section-header,
+.section-header .title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  color: #b22222;
+  font-family: 'Got';
+}
+
+
+    section {
+      margin-bottom: 50px;
+    }
+    section .section-header {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: #9F0311;;
+      margin-bottom: 12px;
+      user-select: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      align-items: center;
+    }
+    section .section-header {
+      font-weight: 600;
+      font-size: 13px;
+      background: transparent;
+      border: none;
+      color: #9F0311;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    section .section-header  {
+      color: #9F0311;;
+    }
+    section .section-header .title {
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    .see-more{
+      max-width: 100px;
+      background-color: #9F0311;
+      margin: 20px;
+      justify-content: flex-end;
+
+
+    }
+    .see-more:hover{
+      background-color: #b22222;
+
+    }
+
+    .title{
+      color: #9F0311;
+      margin-top: 20px;
+    }
+
+
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    }
+    .product-card img {
+      height: 140px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+      background: #fdf6f5;
+    }
+    .product-info {
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      font-family: 'Got';
+      justify-content: space-between;
+    }
+    .product-info .product-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #5c4033;
+      margin-bottom: 6px;
+      min-height: 2.8em; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .product-info .product-price {
+      font-size: 13px;
+      font-weight: 500;
+      color: #a18e87;
+      white-space: nowrap;
+    }
+    .product-info small {
+      font-size: 10px;
+      color: #888;
+      margin-top: 2px;
+      user-select: text;
+    }
+
+
+    .gallery-big {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .gallery-big .large {
+      grid-row: span 2;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .gallery-big .large img {
+      height: 100%;
+      width: 100%px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .gallery-big .small img {
+      border-radius: 12px;
+      height: 100%;
+      object-fit: cover;
+      max-height: 450px;
+    }
+
+
+    .newsletter {
+      background: #b22222;
+      border-radius: 10px;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      color: #b22222;
+      font-size: 14px;
+      margin-bottom: 50px;
+      user-select: none;
+      font-family: 'Got';
+
+    }
+    .newsletter p {
+      flex-grow: 1;
+      max-width: 600px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 1.4;
+      font-family: 'Got';
+
+    }
+    .newsletter form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+    .newsletter input[type=email] {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #deb9b0;
+      font-size: 14px;
+      outline-color: #865f47;
+      min-width: 200px;
+    }
+    .newsletter button {
+      background-color: #fff;
+      border: none;
+      color: #b22222;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .newsletter button:hover {
+      background-color: #fdf6f5;
+    }
