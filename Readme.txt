@@ -1,4 +1,23 @@
-Hello,
+Cake Store — Loja de Bolos
+Cake Store é uma landing page desenvolvido com HTML, CSS e  JavaScript. seu objetivo principal é servir de vitrine e base para novos sites.
+
+
+Funcionalidades
+Home: Página inicial com catálogo de produtos, seção "Sobre Nós", ofertas, comentários e formulário de contato.
+
+Catálogo: Lista de produtos organizados por categorias, com opção de cadastro de cliente.
+
+
+
+Tecnologias Utilizadas
+
+Frontend: HTML5, CSS3, JavaScript
+
+Controle de Versão: Git e GitHub
+
+Editor: Visual Studio Code
+
+FONTS:
 
 Thank for downloading BARCELONY.
 
