@@ -26,12 +26,12 @@ time, mark, audio, video {
 
 @font-face {
   font-family: 'Barcelony';
-  src: url(/Barcelony.ttf);
+  src: url(../Barcelony.ttf);
 }
 
 @font-face {
   font-family: 'Got';
-  src: url(/Gotham\ Pro\ Regular.ttf Pro\ Regular.ttf);
+  src: url(../Gotham\ Pro\ Regular.ttf);
 }
 
 body{
@@ -107,8 +107,9 @@ body{
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
-  color: black;
+  color: #9F0311;
   transition: 0.3s ease;
+
 
 }
 
@@ -134,17 +135,23 @@ body{
   justify-content: flex-end;
 }
 
+.icons i.uil:hover{
+  color: #c0650f;
+}
+
+
 .icons i.uil{
   font-size: 1.5rem;
   color: #9F0311;
   padding: 0 20px;
   cursor: pointer;
   font-weight: 600;
+  transition: color 0.5s ease-in-out;
 }
 
 .inicio{
-  display: flex;
-  background-image: url('../img/fundo.png');
+  display: grid;
+  background-image: url('../img/fundohero.png');
   background-size: cover; 
   background-repeat: no-repeat;  
   background-position: center;   
@@ -152,8 +159,8 @@ body{
 }
 
 .slider{
-  
-  align-content: center;
+  align-content: flex-start;
+  justify-content: center;
   padding:  20px;
   font-size: 5rem;
   font-family: 'Barcelony';
@@ -166,27 +173,41 @@ body{
   font-family: 'Barcelony';
 }
 
+.slider p{
+  color: #b22222;
+  font-family: 'aleo';
+  font-size: 1.5rem;
+}
+
 .bolos{
   display: flex;
   padding-bottom: 30px;
 }
 
-
+.inicio-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 
 
 
 .pedido{
-display: flex;
+display: grid;
 border: 2px solid #9f0311;
 width: 300px;
 height: 60px;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+transition: background-color 0.5s ease-in-out;
+border-radius: 10px;
 }
 
 .pedido:hover {
-background-color:#F9E3E3;
+background-color:#ffffff;
 }
 
 
@@ -346,7 +367,7 @@ nav a.active {
 
 footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     border-top: 1px solid #ccc;
@@ -590,7 +611,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-.catalogo
 
 
 .conteinerf{
@@ -676,7 +696,7 @@ button:hover {
 
 .image-section {
   flex: 1;
-  background: url('/img/fundo.png') no-repeat;
+  background-image: url('../img/Seupedido.png');
   width: 100%;
 }
 
@@ -769,11 +789,10 @@ button:hover {
   display: flex;
   background-color:  #ffffff;
   align-items: center;
-  justify-content: space-between;
-  justify-items: center;
+  justify-content: space-around;
   font-family: 'Got';
   text-align: center;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
 .rodape h1{
